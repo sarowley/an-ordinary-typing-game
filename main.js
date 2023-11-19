@@ -4,7 +4,7 @@ let textArray = [];
 const text1 = "hey, how's it going";
 const text2 = "i'm so glad you decided to play my typing game";
 const text3 =
-  "hey";//"it means a lot to me that you'd play my totally ordinary typing game with nothing special about it";
+  "it means a lot to me that you'd play my totally ordinary typing game with nothing special about it";
 const text4 =
   "that looked rough. you deserve a break. you can just click on the keys now";
 const text5 = "is this cool?";
