@@ -30,6 +30,8 @@ function change3() {
 function change4() {
   //changing back
   document.getElementById("spacer1").value = "";
+  document.getElementById("spacer2").value = "      ";
+  document.getElementById("spacer3").value = "      ";
   //first switch
   document.getElementById("y").value = "is";
   document.getElementById("s").value = "this";
@@ -38,8 +40,6 @@ function change4() {
 
 function change5() {
   //changing back
-  document.getElementById("spacer3").value = "      ";
-  document.getElementById("spacer2").value = "      ";
   document.getElementById("y").value = "y";
   document.getElementById("s").value = "s";
   document.getElementById("b").value = "b";
@@ -120,7 +120,7 @@ function typing(event) {
 
   //a key
   if (event.keyCode == 65) {
-    if (word1) {
+    if (word1 | word5) {
       textArray += "a";
     }
     if (word2) {
@@ -139,6 +139,9 @@ function typing(event) {
     if (word1 | word2 | word3) {
       textArray += "b";
     }
+    if (word5) {
+      textArray += "cool?";
+    }
     if (word6) {
       textArray += "g";
     }
@@ -146,7 +149,7 @@ function typing(event) {
   }
   //c key
   if (event.keyCode == 67) {
-    if (word1 | word2 | word3) {
+    if (word1 | word2 | word3 | word5) {
       textArray += "c";
     }
     if (word6) {
@@ -156,7 +159,7 @@ function typing(event) {
   }
   //d key
   if (event.keyCode == 68) {
-    if (word1 | word2 | word3) {
+    if (word1 | word2 | word3 | word5) {
       textArray += "d";
     }
     if (word6) {
@@ -166,7 +169,7 @@ function typing(event) {
   }
   //e key
   if (event.keyCode == 69) {
-    if (word1 | word2 | word3) {
+    if (word1 | word2 | word3 | word5) {
       textArray += "e";
     }
     if (word6) {
@@ -176,7 +179,7 @@ function typing(event) {
   }
   //f key
   if (event.keyCode == 70) {
-    if (word1 | word2 | word3) {
+    if (word1 | word2 | word3 | word5) {
       textArray += "f";
     }
     if (word6) {
@@ -186,7 +189,7 @@ function typing(event) {
   }
   //g key
   if (event.keyCode == 71) {
-    if (word1 | word2 | word3) {
+    if (word1 | word2 | word3 | word5) {
       textArray += "g";
     }
     if (word6) {
@@ -196,7 +199,7 @@ function typing(event) {
   }
   //h key
   if (event.keyCode == 72) {
-    if (word1 | word2) {
+    if (word1 | word2 | word5) {
       textArray += "h";
     }
     if (word3) {
@@ -209,7 +212,7 @@ function typing(event) {
   }
   //i key
   if (event.keyCode == 73) {
-    if (word1 | word3) {
+    if (word1 | word3 | word5) {
       textArray += "i";
     }
     if (word2) {
@@ -222,7 +225,7 @@ function typing(event) {
   }
   //j key
   if (event.keyCode == 74) {
-    if (word1 | word2 | word3) {
+    if (word1 | word2 | word3 | word5) {
       textArray += "j";
     }
     if (word6) {
@@ -232,7 +235,7 @@ function typing(event) {
   }
   //k key
   if (event.keyCode == 75) {
-    if (word1 | word2 | word3) {
+    if (word1 | word2 | word3 | word5) {
       textArray += "k";
     }
     if (word6) {
@@ -242,14 +245,14 @@ function typing(event) {
   }
   //l key
   if (event.keyCode == 76) {
-    if (word1 | word2 | word3 | word6) {
+    if (word1 | word2 | word3 | word5 | word6) {
       textArray += "l";
     }
     textbox.value = textArray;
   }
   //m key
   if (event.keyCode == 77) {
-    if (word1 | word2 | word3) {
+    if (word1 | word2 | word3 | word5) {
       textArray += "m";
     }
     if (word6) {
@@ -259,7 +262,7 @@ function typing(event) {
   }
   //n key
   if (event.keyCode == 78) {
-    if (word1 | word2 | word3) {
+    if (word1 | word2 | word3 | word5) {
       textArray += "n";
     }
     if (word6) {
@@ -269,7 +272,7 @@ function typing(event) {
   }
   //o key
   if (event.keyCode == 79) {
-    if (word1 | word2 | word3) {
+    if (word1 | word2 | word3 | word5) {
       textArray += "o";
     }
     if (word6) {
@@ -279,7 +282,7 @@ function typing(event) {
   }
   //p key
   if (event.keyCode == 80) {
-    if (word1 | word2 | word3) {
+    if (word1 | word2 | word3 | word5) {
       textArray += "p";
     }
     if (word6) {
@@ -289,7 +292,7 @@ function typing(event) {
   }
   //q key
   if (event.keyCode == 81) {
-    if (word1 | word2 | word3) {
+    if (word1 | word2 | word3 | word5) {
       textArray += "q";
     }
     if (word6) {
@@ -299,7 +302,7 @@ function typing(event) {
   }
   //r key
   if (event.keyCode == 82) {
-    if (word1 | word2 | word3) {
+    if (word1 | word2 | word3 | word5) {
       textArray += "r";
     }
     if (word6) {
@@ -312,6 +315,9 @@ function typing(event) {
     if (word1 | word2 | word3) {
       textArray += "s";
     }
+    if (word5) {
+      textArray += "this";
+    }
     if (word6) {
       textArray += "x";
     }
@@ -319,7 +325,7 @@ function typing(event) {
   }
   //t key
   if (event.keyCode == 84) {
-    if (word1 | word2) {
+    if (word1 | word2 | word5) {
       textArray += "t";
     }
     if (word3) {
@@ -332,7 +338,7 @@ function typing(event) {
   }
   //u key
   if (event.keyCode == 85) {
-    if (word1 | word2 | word3) {
+    if (word1 | word2 | word3 | word5) {
       textArray += "u";
     }
     if (word6) {
@@ -342,7 +348,7 @@ function typing(event) {
   }
   //v key
   if (event.keyCode == 86) {
-    if (word1 | word2 | word3) {
+    if (word1 | word2 | word3 | word5) {
       textArray += "v";
     }
     if (word6) {
@@ -352,7 +358,7 @@ function typing(event) {
   }
   //w key
   if (event.keyCode == 87) {
-    if (word1 | word2 | word3) {
+    if (word1 | word2 | word3 | word5) {
       textArray += "w";
     }
     if (word6) {
@@ -362,7 +368,7 @@ function typing(event) {
   }
   //x key
   if (event.keyCode == 88) {
-    if (word1 | word2 | word3) {
+    if (word1 | word2 | word3 | word5) {
       textArray += "x";
     }
     if (word6) {
@@ -375,6 +381,9 @@ function typing(event) {
     if (word1 | word2 | word3) {
       textArray += "y";
     }
+    if (word5) {
+      textArray += "is";
+    }
     if (word6) {
       textArray += "z";
     }
@@ -382,7 +391,7 @@ function typing(event) {
   }
   //z key
   if (event.keyCode == 90) {
-    if (word1 | word2 | word3) {
+    if (word1 | word2 | word3 | word5) {
       textArray += "z";
     }
     if (word6) {
@@ -462,13 +471,8 @@ function tButton() {
 }
 function yButton() {
   if (clicking) {
-    if (word5) {
-      textArray += "is";
-      textbox.value = textArray;
-    } else {
-      textArray += "y";
-      textbox.value = textArray;
-    }
+    textArray += "y";
+    textbox.value = textArray;
   }
 }
 function uButton() {
@@ -505,13 +509,8 @@ function aButton() {
 }
 function sButton() {
   if (clicking) {
-    if (word5) {
-      textArray += "this";
-      textbox.value = textArray;
-    } else {
-      textArray += "s";
-      textbox.value = textArray;
-    }
+    textArray += "s";
+    textbox.value = textArray;
   }
 }
 function dButton() {
@@ -584,13 +583,8 @@ function vButton() {
 }
 function bButton() {
   if (clicking) {
-    if (word5) {
-      textArray += "cool?";
-      textbox.value = textArray;
-    } else {
-      textArray += "b";
-      textbox.value = textArray;
-    }
+    textArray += "b";
+    textbox.value = textArray;
   }
 }
 function nButton() {

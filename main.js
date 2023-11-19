@@ -60,13 +60,12 @@ function submitButton() {
       word4 = false;
       word5 = true;
       change4();
-      clicking = true;
+      clicking = false;
     } else if (word5) {
       h3[0].innerText = text6;
       word5 = false;
       word6 = true;
       change5();
-      clicking = false;
     } else if (word6) {
       alert("Congratulations! You've won");
       if (alert) {
