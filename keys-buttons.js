@@ -23,6 +23,7 @@ function change3() {
   document.getElementById("h").value = "h";
   //first change
   document.getElementById("spacer1").value = " . ";
+  document.getElementById("spacer2").value = "backspace";
   document.getElementById("spacer3").value = "space";
 }
 
@@ -38,6 +39,7 @@ function change4() {
 function change5() {
   //changing back
   document.getElementById("spacer3").value = "      ";
+  document.getElementById("spacer2").value = "      ";
   document.getElementById("y").value = "y";
   document.getElementById("s").value = "s";
   document.getElementById("b").value = "b";
@@ -125,8 +127,8 @@ function typing(event) {
       textArray += "i";
     }
     if (word3) {
-        textArray += "h";
-      }
+      textArray += "h";
+    }
     if (word6) {
       textArray += "p";
     }
@@ -194,7 +196,7 @@ function typing(event) {
   }
   //h key
   if (event.keyCode == 72) {
-    if (word1  | word2) {
+    if (word1 | word2) {
       textArray += "h";
     }
     if (word3) {
@@ -422,34 +424,40 @@ b.addEventListener("click", bButton);
 n.addEventListener("click", nButton);
 m.addEventListener("click", mButton);
 
-//period & space
+//period & space & backspace
 spacer1.addEventListener("click", periodButton);
+spacer2.addEventListener("click", backspaceButton);
 spacer3.addEventListener("click", spaceButton);
 
 //top row
 function qButton() {
   if (clicking) {
-    textbox.value += "q";
+    textArray += "q";
+    textbox.value = textArray;
   }
 }
 function wButton() {
   if (clicking) {
-    textbox.value += "w";
+    textArray += "w";
+    textbox.value = textArray;
   }
 }
 function eButton() {
   if (clicking) {
-    textbox.value += "e";
+    textArray += "e";
+    textbox.value = textArray;
   }
 }
 function rButton() {
   if (clicking) {
-    textbox.value += "r";
+    textArray += "r";
+    textbox.value = textArray;
   }
 }
 function tButton() {
   if (clicking) {
-    textbox.value += "t";
+    textArray += "t";
+    textbox.value = textArray;
   }
 }
 function yButton() {
@@ -458,35 +466,41 @@ function yButton() {
       textArray += "is";
       textbox.value = textArray;
     } else {
-      textbox.value += "y";
+      textArray += "y";
+      textbox.value = textArray;
     }
   }
 }
 function uButton() {
   if (clicking) {
-    textbox.value += "u";
+    textArray += "u";
+    textbox.value = textArray;
   }
 }
 function iButton() {
   if (clicking) {
-    textbox.value += "i";
+    textArray += "i";
+    textbox.value = textArray;
   }
 }
 function oButton() {
   if (clicking) {
-    textbox.value += "o";
+    textArray += "o";
+    textbox.value = textArray;
   }
 }
 function pButton() {
   if (clicking) {
-    textbox.value += "p";
+    textArray += "p";
+    textbox.value = textArray;
   }
 }
 
 //second row
 function aButton() {
   if (clicking) {
-    textbox.value += "a";
+    textArray += "a";
+    textbox.value = textArray;
   }
 }
 function sButton() {
@@ -495,65 +509,77 @@ function sButton() {
       textArray += "this";
       textbox.value = textArray;
     } else {
-      textbox.value += "s";
+      textArray += "s";
+      textbox.value = textArray;
     }
   }
 }
 function dButton() {
   if (clicking) {
-    textbox.value += "d";
+    textArray += "d";
+    textbox.value = textArray;
   }
 }
 function fButton() {
   if (clicking) {
-    textbox.value += "f";
+    textArray += "f";
+    textbox.value = textArray;
   }
 }
 function gButton() {
   if (clicking) {
-    textbox.value += "g";
+    textArray += "g";
+    textbox.value = textArray;
   }
 }
 function hButton() {
   if (clicking) {
-    textbox.value += "h";
+    textArray += "h";
+    textbox.value = textArray;
   }
 }
 function jButton() {
   if (clicking) {
-    textbox.value += "j";
+    textArray += "j";
+    textbox.value = textArray;
   }
 }
 function kButton() {
   if (clicking) {
-    textbox.value += "k";
+    textArray += "k";
+    textbox.value = textArray;
   }
 }
 function lButton() {
   if (clicking) {
-    textbox.value += "l";
+    textArray += "l";
+    textbox.value = textArray;
   }
 }
 
 //bottom row
 function zButton() {
   if (clicking) {
-    textbox.value += "z";
+    textArray += "z";
+    textbox.value = textArray;
   }
 }
 function xButton() {
   if (clicking) {
-    textbox.value += "x";
+    textArray += "x";
+    textbox.value = textArray;
   }
 }
 function cButton() {
   if (clicking) {
-    textbox.value += "c";
+    textArray += "c";
+    textbox.value = textArray;
   }
 }
 function vButton() {
   if (clicking) {
-    textbox.value += "v";
+    textArray += "v";
+    textbox.value = textArray;
   }
 }
 function bButton() {
@@ -562,38 +588,45 @@ function bButton() {
       textArray += "cool?";
       textbox.value = textArray;
     } else {
-      textbox.value += "b";
+      textArray += "b";
+      textbox.value = textArray;
     }
   }
 }
 function nButton() {
   if (clicking) {
-    textbox.value += "n";
+    textArray += "n";
+    textbox.value = textArray;
   }
 }
 function mButton() {
   if (clicking) {
-    textbox.value += "m";
+    textArray += "m";
+    textbox.value = textArray;
   }
 }
 function spaceButton() {
   if (clicking) {
-    if (word5) {
-      textArray += " ";
-      textbox.value = textArray;
-    } else {
-      textbox.value += " ";
-    }
+    textArray += " ";
+    textbox.value = textArray;
   }
 }
 
 function periodButton() {
   if (clicking) {
-    if (word5) {
-      textArray += ".";
+    textArray += ".";
+    textbox.value = textArray;
+  }
+}
+
+function backspaceButton() {
+  if (clicking) {
+    if (textArray.length == 2) {
+      textArray = textArray.slice(0, 1);
       textbox.value = textArray;
     } else {
-      textbox.value += ".";
+      textArray = textArray.slice(0, -1);
+      textbox.value = textArray;
     }
   }
 }
