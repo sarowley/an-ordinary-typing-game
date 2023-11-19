@@ -4,46 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>an ordinary typing game</title>
-    <link rel="stylesheet" href="style.css"> 
-    <script src="script.js" defer></script>
 </head>
-<body>
-    <div class="wrapper">
-        <input type="text" class="input-field">
-        <div class = "content-box">
-            <div class="typing-text">
-                <p id="paragraph"></p>
-            </div>
-            <div class="content">
-                <ul class="result-details">
-                    <li class="time">
-                        <p>
-                            Time Left:
-                        </p>
-                        <span><b>60</b<>s</span>
-                    </li>
-                    <li class="mistake">
-                        <p>
-                            Mistakes:
-                        </p>
-                        <span>0</span>
-                    </li>
-                    <li class="wpm">
-                        <p>
-                            WPM:
-                        </p>
-                        <span>0</span>
-                    </li>
-                    <li class="cpm">
-                        <p>
-                            CPM:
-                        </p>
-                        <span>0</span>
-                    </li>
-                </ul>
-                <button>Try Again</button>
-            </div>
-        </div>
-    </div>
+
 </body>
+<body onload="topText()">
+  <h3>Some Text</h3>
+
+  <input type="text" value ="text"  id="textbox" onkeyup="typing(event)" />
+  <input type="button" value="Reset" id="reset" />
+  <input type="button" value="Submit" id="submit" />
+  <div></div>
+  <input type="button" value="q" id="q" />
+  <input type="button" value="w" id="w" />
+  <input type="button" value="e" id="e" />
+  <input type="button" value="r" id="r" />
+  <input type="button" value="t" id="t" />
+  <input type="button" value="y" id="y" />
+  <input type="button" value="u" id="u" />
+  <input type="button" value="i" id="i" />
+  <input type="button" value="o" id="o" />
+  <input type="button" value="p" id="p" />
+  <div></div>
+  <input type="button" value ="" id="spacer" />
+  <input type="button" value ="a" id="a" />
+  <input type="button" value="s" id="s" />
+  <input type="button" value="d" id="d" />
+  <input type="button" value="f" id="f" />
+  <input type="button" value="g" id="g" />
+  <input type="button" value="h" id="h" />
+  <input type="button" value="j" id="j" />
+  <input type="button" value="k" id="k" />
+  <input type="button" value="l" id="l" />
+  <input type="button" value ="" id="spacer1" />
+  <div></div>
+  <input type="button" value ="      " id="spacer2" />
+  <input type="button" value ="z" id="z" />
+  <input type="button" value="x" id="x" />
+  <input type="button" value="c" id="c" />
+  <input type="button" value="v" id="v" />
+  <input type="button" value="b" id="b" />
+  <input type="button" value="n" id="n" />
+  <input type="button" value="m" id="m" />
+  <input type="button" value ="      " id="spacer3" />
+
+  <div></div>
+  <br><br><br>
+  Rules:
+  <div></div>
+  • Type what you see on the top, and then hit submit to move onto the next thing to type<br>
+  • You can push reset to delete everything in the textbox <br>
+  • You can also use backspace to delete what you've typed, but you can't hold it down <br>
+  • Just in case you forget what your keyboard looks like, I've put a helpful little guide below the textbox <br>
+  • Have fun :) <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  an ordinary typing game <br>
+by sean rowley <br>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
